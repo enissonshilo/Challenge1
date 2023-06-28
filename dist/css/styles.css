@@ -31,3 +31,19 @@ body {
   letter-spacing: 0em;
   text-align: left; 
 }
+
+.user-posts {
+  font-weight: 600;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #3A4F9A;
+  height: 20px;
+  width: 225px;
+  margin-top: 167px;
+  margin-left: 79px;
+  padding-bottom: 26px;
+  border-bottom: 3px solid #3A4F9A;
+}
