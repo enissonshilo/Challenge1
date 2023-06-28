@@ -13,10 +13,13 @@ body {
 .header {
   display: flex;
   font-weight: 600;
-  height: 59px;
+  height: 29px;
   background-color: #32325d;
   align-items: center;
-  padding-left: 79px;
+  padding: 15px 79px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header h1 {
@@ -26,7 +29,5 @@ body {
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: left;
-
-  
+  text-align: left; 
 }
