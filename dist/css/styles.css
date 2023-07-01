@@ -4,7 +4,7 @@
   --title: #3A4F9A;
   --white: #FFFFFF;
   --primary: #32325D;
-  --sombra: #575757;
+  --bodyText: #575757;
 }
 
 * {
@@ -27,6 +27,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .header h1 {
@@ -58,7 +60,7 @@ body {
 
 #card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 409px);
+  grid-template-columns: repeat(3, 409px);
   grid-template-rows: minmax(auto, 436px);
   justify-content: center;
   align-items: center;
@@ -82,9 +84,6 @@ body {
   height: 455px;
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-end; */
-  /* text-overflow: ellipsis; */
 }
 
 .content img {
@@ -108,7 +107,7 @@ body {
   margin: 15px 21px 1px 29px;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--sombra);
+  color: var(--bodyText);
   letter-spacing: 1.3px;
   text-align: left;
   font: 300 13px/20px "Inter", sans-serif;
