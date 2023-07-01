@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
 
+:root {
+  --title: #3A4F9A;
+  --white: #FFFFFF;
+  --primary: #32325D;
+  --bodyText: #575757;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,36 +14,145 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .header {
   display: flex;
   font-weight: 600;
   height: 29px;
-  background-color: #32325d;
+  background-color: var(--primary);
   align-items: center;
   padding: 15px 79px;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .header h1 {
   padding-left: 8px;
-  color: #ffffff;
+  color: var(--white);
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: left; 
+  text-align: left;
+  
 }
+
+.user-posts {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: var(--title);
+  height: 20px;
+  width: 527px;
+  margin-top: 167px;
+  margin-left: 79px;
+  margin-bottom: 65px;
+  padding-bottom: 26px;
+  border-bottom: 3px solid var(--title);
+}
+
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 409px);
+  grid-template-rows: minmax(auto, 436px);
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.card {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding-bottom: 18px;
+}
+
+.go-post {
+  text-decoration: none;
+}
+
+.content {
+  width: 409px;
+  height: 455px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.content img {
+  width: 409px;
+  height: 273px;
+  object-fit: cover;
+}
+
+.content h3 {
+  color: var(--title);
+  display: flex;
+  text-align: left;
+  font: 500 20px/20px "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 20px 0px 0px 29px;
+  align-items: flex-start;
+  
+}
+
+.content p {
+  margin: 15px 21px 1px 29px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--bodyText);
+  letter-spacing: 1.3px;
+  text-align: left;
+  font: 300 13px/20px "Inter", sans-serif;
+  width: 359px;
+  height: 100px;
+
+}
+
+.expand small {
+  color: var(--title, #3A4F9A);
+  font: 700 13px/20px "Inter", sans-serif;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-align: right;
+  align-self: flex-end;
+  width: 409px;
+  margin: 0px 18px 13px 321px;
+
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  position: relative;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  height: 637px;
+  border-radius: 4px;
+  background: rgba(58, 79, 154, 0.30);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+
 
 /* CSS POST DETAIL */
 
-.detail-container {
+#detail-container {
   display: flex;
-  margin-left: 51px;
+  flex-direction: column;
+
 }
 
 .button-back {
@@ -46,6 +162,7 @@ body {
   align-items: center;
   justify-content: center;
   top: 20px;
+  position: absolute;
 }
 
 .link-back{
@@ -78,14 +195,13 @@ body {
 }
 
 .post-section {
-  width: 80%;
-  max-width: 771px;
+  width: 771px;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 5em;
-  margin-left: 27%;
+  margin-left: auto;
   margin-right: auto;
   flex-direction: column;
   gap: 23px;
@@ -100,7 +216,7 @@ body {
   height: 331px;
   
   max-height: 400px;
-  object-fit: cover;
+  object-fit: fill;
   
 }
 
@@ -112,7 +228,7 @@ body {
 
 .texto-div p{
   margin-top: 20px;
-  color: var(--shadow);
+  color: var(--bodyText);
   text-align: left;
   font: 300 13px/20px "Inter", sans-serif;
   position: relative;
@@ -121,11 +237,11 @@ body {
 }
 
 
-.comments-container {
+#comments-container {
   background: var(--white);
   width: 771px;
   margin-top: 5em;
-  margin-left: 31%;
+  margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
@@ -136,7 +252,7 @@ body {
 }
 
 .comments{
-  border-bottom: 1px solid var(--shadow);
+  border-bottom: 1px solid var(--bodyText);
   margin-right: 4em;
   padding-bottom: 1em;
 
@@ -153,7 +269,7 @@ body {
 }
 
 .user {
-  color: var(--shadow);
+  color: var(--bodyText);
   font: 300 16px/20px "Inter", sans-serif;
   letter-spacing: 1.6px;
 }
