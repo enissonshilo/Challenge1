@@ -50,7 +50,7 @@ body {
   text-align: left;
   color: var(--title);
   height: 20px;
-  width: 225px;
+  width: 527px;
   margin-top: 167px;
   margin-left: 79px;
   margin-bottom: 65px;
@@ -89,6 +89,7 @@ body {
 .content img {
   width: 409px;
   height: 273px;
+  object-fit: cover;
 }
 
 .content h3 {
