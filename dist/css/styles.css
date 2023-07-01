@@ -145,3 +145,131 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
 
+
+/* CSS POST DETAIL */
+
+#detail-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.button-back {
+  margin: 95px 0px 0px 34px;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  position: absolute;
+}
+
+.link-back{
+  text-decoration: none;
+  position: relative;
+  
+}
+
+.icon-ellipse{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary, #32325d);
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-width: 0.3px;
+  width: 75px;
+  height: 75px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
+}
+
+
+.arrow-icon {
+  width: 49px;
+  height: 49px;
+  left: 47px;
+  top: 95px;
+}
+
+.post-section {
+  width: 771px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  gap: 23px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.teste-image img {
+  width: 771px;
+  height: 331px;
+  
+  max-height: 400px;
+  object-fit: fill;
+  
+}
+
+.texto-div h3 {
+  color: var(--title, #3a4f9a);
+  text-align: left;
+  font: 500 20px/20px "Inter", sans-serif;
+}
+
+.texto-div p{
+  margin-top: 20px;
+  color: var(--bodyText);
+  text-align: left;
+  font: 300 13px/20px "Inter", sans-serif;
+  position: relative;
+  width: 676.75px;
+  height: 124.33px;
+}
+
+
+#comments-container {
+  background: var(--white);
+  width: 771px;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.comments-box{
+  margin-left: 54px;
+  padding-top: 36px;
+}
+
+.comments{
+  border-bottom: 1px solid var(--bodyText);
+  margin-right: 4em;
+  padding-bottom: 1em;
+
+}
+
+.user span{
+  color: var(--title);
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+}
+
+.user {
+  color: var(--bodyText);
+  font: 300 16px/20px "Inter", sans-serif;
+  letter-spacing: 1.6px;
+}
+
