@@ -11,7 +11,7 @@ function createPost()
         <h3>${post.title}</h3>
         <p>${post.body}</p>
         <footer class="expand">
-          <small href="#" target="_blank">Expand...</small>
+          <small>Expand...</small>
         </footer>
       </div>
     </a>

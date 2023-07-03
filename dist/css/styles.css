@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&display=swap");
 
 :root {
   --title: #3A4F9A;
@@ -271,6 +271,7 @@ body {
 
 .user {
   color: var(--bodyText);
-  font: 300 16px/20px "Inter", sans-serif;
+  font: 200 16px/20px "Inter", sans-serif;
   letter-spacing: 1.6px;
+  font-style: italic;
 }

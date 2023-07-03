@@ -29,7 +29,7 @@ function createPageDetail() {
       <div class="comments-box">
         <div class="comments">
           <address class="user">
-            <span>${comment.email.split("@")[0]} : ${comment.email}</span>: ${comment.body} 
+            <span>${comment.email.split("@")[0]}: ${comment.email}</span>: ${comment.body} 
           </address>
         </div>
       </div>
